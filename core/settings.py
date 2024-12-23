@@ -178,4 +178,4 @@ ADMIN_SITE_HEADER = "Delta"
 ADMIN_SITE_TITLE = "Delta"
 
 
-WATERMARK_PATH = os.path.join(BASE_DIR, 'watermark', 'repeating_watermark.png')
+WATERMARK_PATH = os.path.join(BASE_DIR, 'watermark', 'watermark.png')
