@@ -22,6 +22,9 @@ RUN pip install --upgrade pip \
 # Copy the project files into the container
 COPY . .
 
+# Collect static files (run this only if you don't need DB access at build time)
+RUN python manage.py collectstatic --noinput
+
 # Expose the app port
 EXPOSE 8000
 
